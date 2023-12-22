@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean class="tsi.ensg.jee.tp2.simpleBis.QuestionsJavaAvance">
+        <property name="listquestions">
+            <list>
+                <value>Question 1 choisie : questionsjavaavance</value>
+                <value>Question 2 choisie : questionsjavaavance</value>
+                <value>Question 3 choisie : questionsjavaavance</value>
+                <value>Question 4 choisie : questionsjavaavance</value>
+                <value>Question 5 choisie : questionsjavaavance</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean primary="true" class="tsi.ensg.jee.tp2.simpleBis.QuestionsJava">
+        <property name="listquestions">
+            <list>
+                <value>Question  1 choisie : questionsjava</value>
+                <value>Question  2 choisie : questionsjava</value>
+                <value>Question  3 choisie : questionsjava</value>
+                <value>Question  4 choisie : questionsjava</value>
+                <value>Question  5 choisie : questionsjava</value>
+                <value>Question  6 choisie : questionsjava</value>
+                <value>Question  7 choisie : questionsjava</value>
+                <value>Question  8 choisie : questionsjava</value>
+                <value>Question  9 choisie : questionsjava</value>
+                <value>Question 10 choisie : questionsjava</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="questionService" class="tsi.ensg.jee.tp2.simpleBis.QuestionsService" autowire="byType"/>
+
+</beans>
